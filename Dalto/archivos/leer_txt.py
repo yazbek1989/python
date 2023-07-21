@@ -1,0 +1,1 @@
+archivo = open("archivos\\texto_de_dalto.txt")
