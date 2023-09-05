@@ -11,9 +11,12 @@ with open(r'TTL\habitosatomicos.pdf', 'rb') as archivo:
     lector = pdf.PdfReader(archivo)
     numpages = len(lector.pages)
     print(f"el numero de paginas del archivo es: {numpages}")
-    pagina = lector.pages[4]
-    texto = pagina.extract_text()
-    print(texto)
+    pagina = lector.pages[5]
+    pretexto = pagina.extract_text()
     
+pattern = r"\n"
+replacement = " "
+texto = re.sub(pattern,replacement,pretexto)
+print(texto)
 engine.say(texto)
 engine.runAndWait()

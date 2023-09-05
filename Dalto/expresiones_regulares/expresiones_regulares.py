@@ -31,7 +31,7 @@ Hola esta es la cadena 255 de texto.'''
 #\n busca saltos en linea
 # resultado = re.findall(r"\n.",texto)
 
-#\ cancelar caracteres especiales para busqueda de caracteres especiales jajajaj
+#\ cancelar caracteres especiales para busqueda de caracteres especiales jajajaj, buscamos el . exactamente en el caso de \.
 # resultado = re.findall(r'\.',texto)
 
 # armando una cadena que busque un numero, seguido de un punto y un espacio
